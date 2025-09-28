@@ -1,4 +1,7 @@
+
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
+[Entrega2_Grupo1_Projeto_Eixo3_CuidaMente.docx](https://github.com/user-attachments/files/22585984/Entrega2_Grupo1_Projeto_Eixo3_CuidaMente.docx)
+
 
 Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
 
@@ -6,6 +9,7 @@ Nesta parte do trabalho você deve detalhar a documentação dos requisitos do s
 Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
 
 ## 3.2 Escopo do produto
+
 
 ### 3.2.1 Nome do produto e seus componentes principais
 O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
