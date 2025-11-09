@@ -290,7 +290,7 @@ Ganhos: Interface limpa e orientações visuais.
 ## 4.3 Protótipos das Interfaces
 
 [CuidaMente_Telas.zip](https://github.com/user-attachments/files/23442792/CuidaMente_Telas.zip)
-
+https://www.figma.com/proto/Abn4NAl9UzN36es1cc4hzF/CuidaMente?node-id=0-1&t=W1Ai5XtIZvjUmdkv-1
 
 
 ## 4.4 Testes com Protótipos
