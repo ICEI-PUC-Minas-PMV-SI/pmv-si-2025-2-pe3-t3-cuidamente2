@@ -226,7 +226,66 @@ Relacionamento com tecnologia: Clica errado com frequência e evita apps novos.
 Citação: “Eu quero ajuda… só não quero me perder nesses aplicativos.” 
 
 ## 4.2 Mapa de Empatia
-Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
+4.2.1 João Paulo da Silva 
+ 
+O que vê: Observa notícias sobre ansiedade e saúde mental nas redes sociais, mas não entende bem como procurar ajuda. Nota que muitos colegas comentam sobre estresse no trabalho. 
+O que ouve: Amigos e familiares dizem que ele precisa “se cuidar”, mas poucos indicam caminhos práticos. Também ouve que terapia é “cara” ou difícil de marcar. 
+O que pensa e sente: Sente cansaço, solidão e preocupação com o futuro. Pensa que precisa de ajuda, mas se sente inseguro para buscar atendimento sozinho. 
+O que fala e faz: Reclama da falta de tempo e de aplicativos complicados. Quando tenta procurar atendimento, desiste rapidamente ao se confundir. 
+Dores: Dificuldade em navegar em sistemas digitais, medo de ser enganado, insegurança com a própria capacidade de usar tecnologia. 
+Ganhos: Encontrar atendimento de forma simples, rápida e confiável. Sentir-se acolhido e ter acesso a um espaço de cuidado emocional. 
+
+ 
+
+4.2.2 Maria do Carmo Andrade 
+
+O que vê: Mensagens religiosas, vídeos encaminhados, anúncios confusos sobre terapia. 
+O que ouve: Filhos dizendo que ela precisa se cuidar. 
+O que pensa e sente: Tristeza, insegurança, medo de tecnologia. 
+O que fala e faz: Evita acessar links, pede ajuda sempre. 
+Dores: Termos difíceis, textos longos, telas poluídas. 
+Ganhos: Simplicidade, clareza e segurança. 
+ 
+ 
+4.2.3 Lucas Henrique Pires 
+
+O que vê: Influenciadores falando de ansiedade. 
+O que ouve: Amigos sugerindo terapia. 
+O que pensa e sente: Sobrecarregado, inseguro. 
+O que fala e faz: Tenta aplicativos, mas abandona rápido. 
+Dores: Lentidão, excesso de etapas. 
+Ganhos: Rapidez, objetividade e sigilo. 
+ 
+ 
+4.2.4 Ana Beatriz Ramos 
+
+O que vê: Posts sobre estresse e burnout. 
+O que ouve: Colegas dizendo que terapia ajuda. 
+O que pensa e sente: Cansaço, medo de errar. 
+O que fala e faz: Fecha aplicativos quando se confunde. 
+Dores: Falta de clareza, desorganização visual. 
+Ganhos: Orientação simples e navegação guiada. 
+ 
+ 
+4.2.5 Pedro Augusto Lemos 
+
+O que vê: Stories sobre ansiedade e estresse. 
+O que ouve: Colegas falando de cansaço emocional. 
+O que pensa e sente: Sobrecarregado, buscando mudança. 
+O que fala e faz: Desiste ao ver complexidade. 
+Dores: Correria do trabalho, telas lentas. 
+Ganhos: Agilidade e simplicidade. 
+
+ 
+
+4.2.6 Rosilene Ferreira Couto 
+
+O que vê: Posts sobre depressão, mensagens de autoajuda. 
+O que ouve: Filhos incentivando cuidado. 
+O que pensa e sente: Insegurança, tristeza profunda. 
+O que fala e faz: Evita usar apps complexos. 
+Dores: Falta de clareza e excesso de opções. 
+Ganhos: Interface limpa e orientações visuais. 
 
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
