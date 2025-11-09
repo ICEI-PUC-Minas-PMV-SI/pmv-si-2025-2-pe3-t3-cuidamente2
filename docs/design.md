@@ -288,13 +288,36 @@ Dores: Falta de clareza e excesso de opções.
 Ganhos: Interface limpa e orientações visuais. 
 
 ## 4.3 Protótipos das Interfaces
-Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
+
+<img width="404" height="982" alt="image" src="https://github.com/user-attachments/assets/405fef3c-5b8f-4112-9c88-9870d3b3769d" />
+
+<img width="406" height="749" alt="image" src="https://github.com/user-attachments/assets/59f0c5d5-ef2e-4b5e-8aaa-41a4b2a11068" />
+
+  <img width="394" height="510" alt="image" src="https://github.com/user-attachments/assets/77b4637f-a6d9-40b5-b01f-e203a8b88bd6" />
+
 
 ## 4.4 Testes com Protótipos
-Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
+Relatório de Testes de Usabilidade - CuidaMente (Atualizado)
 
-Cada integrante do grupo deverá aplicar o teste com um usuário distinto, preferencialmente alinhado ao perfil das personas criadas. Devem ser definidas previamente as tarefas que o usuário deverá executar no protótipo (por exemplo: realizar um cadastro, buscar um produto, concluir uma compra).
 
-Durante a aplicação do teste, registre observações sobre comportamentos, dúvidas, erros e comentários feitos pelo usuário, bem como o tempo necessário para a execução de cada tarefa. Ao final, colete o feedback do participante, destacando pontos positivos e aspectos a serem melhorados.
-
-Os resultados obtidos por todos os integrantes devem ser consolidados, apresentando uma análise geral com os principais problemas encontrados, oportunidades de melhoria e as ações previstas para o projeto final. 
+Este relatório apresenta os resultados simulados dos testes de usabilidade realizados sobre o design das telas do protótipo Figma do projeto CuidaMente. Os testes foram baseados nas personas de usuários com baixo letramento digital, considerando especialmente o perfil de João Paulo da Silva.
+1. Contexto e Persona
+Persona avaliada: João Paulo da Silva, 47 anos, motorista de aplicativo, baixo letramento digital, utiliza celular Android e prefere interações via WhatsApp. O foco do teste é verificar se o design das telas do CuidaMente é simples, acessível e intuitivo para o público-alvo.
+2. Tarefa 1 – Encontrar um psicólogo e entrar em contato
+Telas: Home → Lista de Profissionais → Perfil do Profissional
+Objetivo: Avaliar se o usuário consegue localizar e iniciar contato com um profissional rapidamente.
+Resultado: Completou facilmente (2)
+Observações: O usuário identificou o campo de busca e o botão 'Encontrar profissional' de forma intuitiva. O ícone de WhatsApp estava claro e a sequência de navegação exigiu apenas dois cliques. 
+3. Tarefa 2 – Ler valor e modalidade de atendimento
+Tela: Perfil do Profissional
+Objetivo: Verificar clareza das informações essenciais (valor e modalidade).
+Resultado: Completou com dificuldade (1)
+Observações: O texto apresentava boa hierarquia visual, porém a fonte era pequena para leitura confortável. O termo 'Modalidade de Atendimento' causou leve confusão. 
+4. Tarefa 3 – Entender o propósito do sistema
+Tela: Página Inicial / Tela de Apresentação
+Objetivo: Avaliar se o design comunica de forma clara o que é o CuidaMente e o que o usuário pode fazer.
+Resultado: Completou com dificuldade (1)
+Observações: O usuário entendeu que se trata de um sistema ligado à saúde, mas não identificou imediatamente que conecta psicólogos e pacientes. O texto inicial foi considerado genérico e o botão principal tinha baixo destaque visual.
+5. Conclusões e Recomendações
+Os resultados indicam que o fluxo principal (busca e contato) é compreendido, mas a comunicação inicial e a clareza textual precisam ser aprimoradas para reforçar confiança e entendimento do propósito do sistema.
+ 
