@@ -289,11 +289,8 @@ Ganhos: Interface limpa e orientações visuais.
 
 ## 4.3 Protótipos das Interfaces
 
-<img width="404" height="982" alt="image" src="https://github.com/user-attachments/assets/405fef3c-5b8f-4112-9c88-9870d3b3769d" />
+[CuidaMente_Telas.zip](https://github.com/user-attachments/files/23442792/CuidaMente_Telas.zip)
 
-<img width="406" height="749" alt="image" src="https://github.com/user-attachments/assets/59f0c5d5-ef2e-4b5e-8aaa-41a4b2a11068" />
-
-  <img width="394" height="510" alt="image" src="https://github.com/user-attachments/assets/77b4637f-a6d9-40b5-b01f-e203a8b88bd6" />
 
 
 ## 4.4 Testes com Protótipos
