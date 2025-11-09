@@ -1,7 +1,5 @@
 
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
-[Entrega2_Grupo1_Projeto_Eixo3_CuidaMente.docx](https://github.com/user-attachments/files/22585984/Entrega2_Grupo1_Projeto_Eixo3_CuidaMente.docx)
-
 
 ## 3.1 Objetivos deste documento
 Descrever e especificar as necessidades do Grupo 1 do Eixo 3 do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto CuidaMente – Tecnologia inclusiva para a saúde mental. 
@@ -34,14 +32,19 @@ O CuidaMente não oferece plataforma para vídeo chamadas, chamadas de áudio ou
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Cadastro de Profissional |	O sistema deve permitir que profissionais se cadastrem e criem um perfil |
-| RF2 |	Edição de Perfil 	| O sistema deve permitir editar dados |
-| RF3	| Estatísticas de Perfil  |	O sistema deve exibir estatísticas de visualização do perfil, sem identificar individualmente os visitantes |
-| RF4 |	Restrições 	| O sistema não deve permitir o cadastro de visitantes (potenciais pacientes) |
-| RF5 |	Contato com profissional 	| O visitante deve ter acesso a informações para iniciar comunicação externa com o profissional |
-| RF6 |	Administrativa 	| O administrador deve poder gerenciar cadastros (editar, inativar, excluir) |
-| RF7 |	Administrativa 	| O administrador deve poder aceitar ou rejeitar publicação de perfil |
-| RF8 |	Administrativa 	| O administrador deve poder emitir relatórios sobre os cadastros e estatísticas gerais |
+| RF1 | Cadastro de Profissional |	O sistema deve permitir que Profissionais criem uma conta com login na plataforma |
+| RF2 |	Edição de Dados 	| O sistema deve permitir editar dados cadastrais |
+| RF3	|Atualização de Perfil   |	O sistema deve permitir que Profissionais editem um perfil profissional e solicitem validação para publicação |
+| RF4 |	Estatísticas de Visualização 	| O sistema deve fornecer relatórios de visualização de perfil para o profissional, sem identificar individualmente os visitantes |
+| RF5 |	Listagem de perfis 	| O sistema deve listar os Profissionais ativos e validados.  |
+| RF6 |	Contato com profissional 	| O Visitante e o Administrador devem ter acesso a informações de contato para iniciar comunicação externa com o Profissional. |
+| RF7 |	Administrativa 	| O Administrador deve poder editar, inativar ou reativar, validar e excluir perfis de Profissionais |
+| RF8 |	Login  	| O profissional deve ter acesso ao seu perfil profissional na plataforma através de login |
+| RF9 |	Linguagem e Instruções  	| O sistema deve apresentar instruções curtas, ícones e orientações visuais |
+| RF10 |	Relatórios  	| O Administrador deve poder ter acesso a métricas básicas dos perfis dos profissionais e dados gerais da plataforma. |
+| RF11 |Ambientes   	| O sistema deve conter um ambiente para administração e gerência dos profissionais na plataforma e outro ambiente para o Profissional gerenciar seu próprio perfil  |
+| RF12 |	Tamanho de Fonte e Controle de Contraste  	| O sistema deve disponibilizar controles que permitam ao usuário ajustar o contraste e o tamanho da fonte, com pré-visualização imediata das alterações |
+| RF13 |	Inclusão e Navegação   	| O sistema deve permitir navegação por teclado e ter compatibilidade com leitores de tela |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -70,169 +73,219 @@ Como observado no diagrama de casos de uso da Figura 1, o Profissional poderá c
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu]<img width="1710" height="796" alt="Screenshot 2025-09-28 022559" src="https://github.com/user-attachments/assets/fc81e943-4f48-4e49-a552-fe05fe97a817" />
+<img width="949" height="432" alt="image" src="https://github.com/user-attachments/assets/86d33d6d-d12c-4f70-84e2-04cae64af2b1" />
+
 
  
 ### 3.4.2 Descrições de Casos de Uso
 
-### Cadastrar Perfil (CSU01) 
+### Criar Conta (CSU01) 
 
-Sumário: O Profissional preenche o formulário para cadastro de perfil (inclusão) 
+Sumário: O Profissional preenche o formulário para criar uma conta na plataforma (inclusão). 
+
 Ator Primário: Profissional 
+
 Ator Secundário: Administrador 
+
 Pré-condições: Profissional deve ter acesso à internet e fornecer dados básicos. 
+
 Fluxo Principal: 
 
-O Profissional preenche o formulário inicial (Nome Completo, nº do CRP, E-mail para contacto, Telefone, Senha, Confirmação de senha) para cadastrar um perfil no Sistema. 
-O Sistema apresenta a operação que pode ser realizada: registrar cadastro.  
-O Profissional seleciona a operação desejada: Registrar Cadastro ou opta por finalizar o caso de uso. 
-Se a operação desejada for Registrar Cadastro, o Sistema inclui o Profissional no registro de cadastro e apresenta as operações que podem ser realizadas: editar perfil. 
-O Profissional seleciona a operação desejada: Editar Perfil, ou opta por finalizar o caso de uso. 
+O Profissional preenche o formulário inicial (Nome Completo, nº do CRP, CPF e email) para cadastrar uma conta no Sistema.  
 
-Fluxo Alternativo (1): Registrar Cadastro 
-O Profissional requisita o registro de cadastro de perfil. 
-O Sistema verifica a validade dos dados.  
-Se os dados forem válidos, o Sistema verifica se o Profissional já está cadastrado. Se sim, o Sistema reporta o fato e apresenta as operações que podem ser realizadas: Fazer Login ou Solicitar Troca de Senha, ou opta por finalizar o caso de uso; caso contrário, o Profissional é registrado no Sistema. 
-Se os dados não forem válidos, o Sistema reporta o fato e solicita novos dados e repete a verificação. 
+O Profissional seleciona a operação desejada: Avançar ou opta por finalizar o caso de uso. 
 
-Fluxo Alternativo (2): Editar Perfil 
-O Profissional edita um ou mais detalhes a serem exibidos no perfil (foto, modalidade de atendimento, localização, valor da sessão/ tempo de duração, abordagem principal, descrição), solicita a atualização e publicação. 
-O Administrador aceita ou rejeita a solicitação de publicação. 
+ 
 
-Pós-condições: Um profissional foi inserido. A publicação do perfil fica sujeita a análise do Administrador. 
+Pós-condições: Se a operação desejada for Avançar, o Profissional receberá um email com link para criar senha de acesso ao Sistema e fazer login.  
 
  
 
 ### Fazer Login (CSU02) 
 
-Sumário: O Profissional fornece dados de usuário e senha (acesso)
+Sumário: O Profissional fornece dados de usuário e senha (acesso). 
+
 Ator Primário: Profissional 
-Ator Secundário: Administrador 
-Pré-condições: Profissional deve ter acesso à internet e já estar cadastrado
+
+Ator Secundário:  
+
+Pré-condições: Profissional deve ter acesso à internet e já estar cadastrado. 
+
 Fluxo Principal: 
 
 O Profissional preenche os campos de Usuário e Senha e solicita acesso  
+
 O Sistema verifica a validade dos dados. Se os dados forem válidos, o Profissional acessa seu perfil. Se os dados não forem válidos, o Sistema reporta o fato e apresenta as operações que podem ser realizadas: tentar novamente ou solicitar troca de senha. 
+
 O Profissional seleciona a operação desejada: Tentar Novamente, Solicitar Troca de Senha ou opta por finalizar o caso de uso. 
 
-Fluxo Alternativo (1): Tentar Novamente 
-Repete o fluxo principal 
+ 
 
-Fluxo Alternativo (2): Solicitar Troca de Senha 
+Fluxo Alternativo (1): Editar dados cadastrais 
+
 O Profissional fornece o e-mail de usuário e solicita a troca de senha. 
+
 O Sistema envia um link para o e-mail informado. 
+
+O Profissional solicita a alteração da senha. O Sistema verifica a validade dos dados e, se eles forem válidos, altera a senha no cadastro do Profissional, caso contrário, reporta o fato. 
+
+Pós-condições: O Profissional acessa seu perfil profissional no Sistema.
+ 
+
+### Editar Perfil (CSU03)  
+
+Sumário: O profissional deve já ter um cadastro válido no sistema. 
+
+Ator Primário: Visitante 
+
+Ator Secundário: Administrador 
+
+Pré-condições: O profissional deve já ter um cadastro válido no sistema. O profissional deve estar autenticado (login realizado). 
+
+Fluxo Principal: 
+
+O Profissional acessa seu perfil. 
+
+O Sistema apresenta os dados já cadastrados. 
+
+O Profissional seleciona a opção Editar Perfil. 
+
+O Profissional altera os campos desejados (foto, localização, modalidade de atendimento, abordagem principal, valor da sessão, descrição). 
+
+O Profissional confirma a atualização. 
+
+O Sistema registra a solicitação de alteração e a envia para análise do Administrador. 
+
+O Administrador valida e publica a atualização. 
+
+ 
+
+Fluxo Alternativo (1): Editar dados cadastrais 
+
+O Profissional fornece o e-mail de usuário e solicita a troca de senha. 
+
+O Sistema envia um link para o e-mail informado. 
+
 O Profissional solicita a alteração da senha. O Sistema verifica a validade dos dados e, se eles forem válidos, altera a senha no cadastro do Profissional, caso contrário, reporta o fato. 
 
 Pós-condições:  
- 
 
-### Buscar Profissional (CSU03) 
+
+### Buscar Profissional (CSU04)  
 
 Sumário: O Visitante busca profissionais utilizando filtros (consulta) 
+
 Ator Primário: Visitante 
+
 Pré-condições: O sistema deve estar disponível online. 
+
 Fluxo Principal: 
 
 O Visitante acessa a página inicial. 
+
 O Visitante digita um nome ou seleciona filtros (especialidade, localização, modalidade de atendimento). 
+
 O Sistema processa a busca. 
+
 O Sistema exibe a lista de profissionais compatíveis. 
 
+ 
+
 Fluxo Alternativo (1): Nenhum resultado encontrado 
+
 O Sistema exibe mensagem de que não há resultados para os filtros escolhidos e sugere ajustes de pesquisa. 
 
-Pós-condições: O visitante obtém uma lista de profissionais disponíveis conforme os critérios aplicados. 
+ 
 
+Pós-condições: O visitante obtém uma lista de profissionais disponíveis conforme os critérios aplicados.  
 
-### Gerenciar Cadastros (CSU04) 
+ 
+### Gerenciar Cadastros (CSU05)  
 
-Sumário: O Administrador fornece dados de usuário e senha (acesso). 
+SSumário: O Administrador fornece dados de usuário e senha (acesso). 
+
 Ator Primário: Administrador 
+
 Ator Secundário:  
+
 Pré-condições: O Administrador precisa já estar cadastrado 
+
 Fluxo Principal: 
 
 O Administrador preenche os campos de Usuário e Senha  
-O Sistema verifica a validade dos dados. Se os dados forem válidos, o Administrador acessa o Sistema. Se os dados não forem válidos, o Sistema reporta o fato e apresenta as operações que podem ser realizadas: tentar novamente ou solicitar troca de senha. 
-O Administrador seleciona a operação desejada: Tentar Novamente, Solicitar Troca de Senha ou opta por finalizar o caso de uso. 
-
-Fluxo Alternativo (1): Solicitar Troca de Senha 
-
-O Profissional seleciona a opção solicitar troca de senha. 
-O Sistema solicita o e-mail cadastrado 
-O Sistema envia instruções de redefinição de senha. 
-
-Pós-condições: O Profissional consegue acessar o sistema. Dependendo da ação realizada, ele pode ter: 
-Tentado login com sucesso e acessado o sistema; 
-Solicitada redefinição de senha; 
-Encontrados dados inválidos, permanecendo na tela de login até correção. 
 
  
-### Contactar Profissional (CSU05) 
+
+Pós-condições:  
+
+ 
+
+### Contactar Profissional (CSU06)  
 
 Sumário: O Visitante inicia contato direto com um profissional. 
+
 Ator Primário: Visitante 
+
 Ator Secundário: Administrador 
+
 Pré-condições: O profissional deve ter cadastro válido e perfil publicado. 
+
 Fluxo Principal: 
 
 O Visitante acessa o perfil de um profissional. 
-O Sistema exibe os meios de contato disponíveis 
+
+O Sistema exibe os meios de contato disponíveis (WhatsApp, e-mail). 
+
 O Visitante escolhe o meio de contato. 
+
 O Sistema redireciona o Visitante para o aplicativo externo correspondente (WhatsApp ou e-mail). 
 
+ 
 
 Fluxo Alternativo (1): Contato indisponível 
+
 Caso um dos meios de contato esteja temporariamente indisponível, o Sistema notifica o visitante e sugere outra opção disponível. 
+
+ 
 
 Pós-condições: A comunicação entre visitante e profissional é iniciada fora da plataforma. 
 
  
-
-### Editar Perfil (CSU06) 
-
-Sumário: O profissional deve já ter um cadastro válido no sistema. 
-Ator Primário: Profissional
-Ator Secundário: Administrador 
-Pré-condições: O profissional deve já ter um cadastro válido no sistema. O profissional deve estar autenticado (login realizado). 
-Fluxo Principal: 
-
-O Profissional acessa seu perfil. 
-O Sistema apresenta os dados já cadastrados. 
-O Profissional seleciona a opção Editar Perfil. 
-O Profissional altera os campos desejados (foto, localização, modalidade de atendimento, abordagem principal, valor da sessão, descrição). 
-O Profissional confirma a atualização. 
-O Sistema registra a solicitação de alteração e a envia para análise do Administrador. 
-O Administrador valida e publica a atualização. 
-
-
-Fluxo Alternativo (1): Dados inválidos 
-O Sistema identifica inconsistências (ex.: e-mail inválido, número de CRP duplicado). 
-O Sistema reporta o erro e solicita correção dos dados 
- 
-
-Pós-condições: O perfil é atualizado e fica sujeito à validação/publicação pelo Administrador. 
-
- 
-### Emitir Relatórios (CSU08) 
+### Emitir Relatórios (CSU07)  
 
 Sumário: O profissional deve já ter um cadastro válido no sistema. 
+
 Ator Primário: Administrador 
+
 Pré-condições: O administrador deve estar autenticado. 
+
 Fluxo Principal: 
 
 O Administrador acessa o painel administrativo. 
+
 O Sistema apresenta opções de relatórios (número de profissionais cadastrados, estatísticas de visitas a perfis, relatórios por especialidade etc.). 
+
 O Administrador seleciona o tipo de relatório desejado 
+
 O Sistema processa os dados. 
+
 O Sistema apresenta o relatório em tela e permite exportação em formato PDF/Excel. 
 
  
+
 Fluxo Alternativo (1): Falha de geração 
+
 Se houver inconsistência nos dados, o Sistema informa a falha e sugere nova tentativa. 
 
  
+
 Pós-condições: Relatório é gerado e exibido para o Administrador. 
+
+ 
+
+3.4.3 Diagrama de Classes  
+
+A Figura 2 mostra o diagrama de classes do sistema. O Profissional deve conter a identificação do Cadastro e Perfil. Um Perfil pode conter um ou muitos serviços e um Servico pode estar relacionado a nenhum ou a muitos perfis. O Login deve conter a identificação de Cadastro e Administrador.  
 
 ### 3.4.3 Diagrama de Classes 
 
@@ -240,7 +293,8 @@ A Figura 2 mostra o diagrama de classes do sistema. O Profissional deve conter a
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image]<img width="880" height="741" alt="Screenshot 2025-09-28 233640" src="https://github.com/user-attachments/assets/4c808724-7749-4334-9fab-755a929051e3" />
+<img width="924" height="486" alt="image" src="https://github.com/user-attachments/assets/2a54f6cc-68d1-491d-88da-218eac3e338e" />
+
 
 
 
@@ -249,8 +303,5 @@ A Figura 2 mostra o diagrama de classes do sistema. O Profissional deve conter a
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | 1	|	Administrador  |	Cadastro de informações relativas ao administrador da plataforma |
-| 2	| Login  |	Cadastro de informações de login  |
-| 3 |	Profissional  |	Cadastro de todas as informações do profissional  |
-| 4 |	Cadastro  | Cadastro de informações básicas do profissional |
-| 5	|	Perfil  |	Cadastro de informações profissionais  |
-| 6 |	Servico  |	Cadastro de informações relativas ao serviço ofertado |
+| 2 |	Profissional  |	Cadastro de todas as informações do profissional  |
+| 3 |	Servico  |	Cadastro de informações relativas ao serviço ofertado |
